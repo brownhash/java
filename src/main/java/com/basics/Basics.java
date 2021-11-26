@@ -38,9 +38,20 @@ class Basics {
         new com.basics.Constructor();
 
         // initiate a new instance of class Conditionals present in same package
-        Conditionals conditionals = new Conditionals();
+        com.basics.Conditionals conditionals = new com.basics.Conditionals();
         System.out.println("\nConditional values -");
         conditionals.ifElse(-1);
         conditionals.switchStatement("tom");
+
+        // initiate a new instance of class Loops present in same package
+        com.basics.Loops loops = new com.basics.Loops();
+        System.out.println("\nLoops -");
+        loops.forLoop(2);
+        loops.whileLoop(2);
+        loops.doWhileLoop(0);
+        // change values in above declared array
+        advDataTypes.IntArray[0] = 5;
+        advDataTypes.IntArray[1] = -2;
+        loops.forEachLoop(advDataTypes.IntArray);
     }
 }
