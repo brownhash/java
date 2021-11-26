@@ -14,6 +14,7 @@ else
   if [ "$?" == "0" ]
   then
     # compile
+    rm -rf $PROJECT_LOCATION/$PACKAGE_PATH/*.class
     javac $PROJECT_LOCATION/$PACKAGE_PATH/*.java
     cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
   else
