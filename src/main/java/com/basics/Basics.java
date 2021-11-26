@@ -59,7 +59,10 @@ class Basics {
         System.out.println("\nException handling -");
         errorHandling.tryCatch();
 
-        // TODO: example of inheritance, as used below in custom exceptions
+        // initiate a new instance of class Inheritance present in same package
+        System.out.println("\nInheritance -");
+        com.basics.Inheritance inheritance = new com.basics.Inheritance();
+        inheritance.properties();
 
         // initiate a new instance of class CustomException present in same package
         System.out.println("\nCustom Exceptions -");
