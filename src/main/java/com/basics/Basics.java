@@ -59,10 +59,15 @@ class Basics {
         System.out.println("\nException handling -");
         errorHandling.tryCatch();
 
+        // OOP
+        // 1. Encapsulation
+        // 2. Abstraction
+        // 3. Inheritance
         // initiate a new instance of class Inheritance present in same package
         System.out.println("\nInheritance -");
         com.basics.Inheritance inheritance = new com.basics.Inheritance();
         inheritance.properties();
+        // 4. Polymorphism
 
         // initiate a new instance of class CustomException present in same package
         System.out.println("\nCustom Exceptions -");
