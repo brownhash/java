@@ -58,5 +58,15 @@ class Basics {
         com.basics.ErrorHandling errorHandling = new com.basics.ErrorHandling();
         System.out.println("\nException handling -");
         errorHandling.tryCatch();
+
+        // TODO: example of inheritance, as used below in custom exceptions
+
+        // initiate a new instance of class CustomException present in same package
+        System.out.println("\nCustom Exceptions -");
+        try{
+            throw new com.basics.CustomException("custom exception");
+        }catch (com.basics.CustomException e) {
+            System.out.println("\tException caught! " + e.getClass());
+        }
     }
 }
