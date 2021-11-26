@@ -53,5 +53,10 @@ class Basics {
         advDataTypes.IntArray[0] = 5;
         advDataTypes.IntArray[1] = -2;
         loops.forEachLoop(advDataTypes.IntArray);
+
+        // initiate a new instance of class ErrorHandling present in same package
+        com.basics.ErrorHandling errorHandling = new com.basics.ErrorHandling();
+        System.out.println("\nException handling -");
+        errorHandling.tryCatch();
     }
 }
