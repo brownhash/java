@@ -36,5 +36,11 @@ class Basics {
         // initiate a new instance of class Constructor present in same package
         System.out.println("\nConstructor ran at -");
         new com.basics.Constructor();
+
+        // initiate a new instance of class Conditionals present in same package
+        Conditionals conditionals = new Conditionals();
+        System.out.println("\nConditional values -");
+        conditionals.ifElse(-1);
+        conditionals.switchStatement("tom");
     }
 }
