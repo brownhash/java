@@ -4,7 +4,7 @@ class Basics {
     public static void main(String[] args) {
         System.out.println("Java basics!");
 
-        // initiate a new instance of class DataTypes present in same package
+        // initiate a new instance of class PrimitiveDataTypes present in same package
         com.basics.PrimitiveDataTypes dataTypes = new com.basics.PrimitiveDataTypes();
 
         System.out.println("\nPrimitive Data Types (in increasing order of size) -");
@@ -17,7 +17,7 @@ class Basics {
         System.out.println("\tlong: " + dataTypes.Long);
         System.out.println("\tdouble: " + dataTypes.Double);
 
-        // initiate a new instance of class DataTypes present in same package
+        // initiate a new instance of class AdvancedDataTypes present in same package
         com.basics.AdvancedDataTypes advDataTypes = new com.basics.AdvancedDataTypes();
         System.out.println("\nAdvanced Data Types -");
         System.out.println("\tString: " + advDataTypes.StringVar);
@@ -32,5 +32,9 @@ class Basics {
         // Add keys to map
         advDataTypes.MapVar.put("Key1", "value1");
         System.out.println("\tMap: " + advDataTypes.MapVar);
+
+        // initiate a new instance of class Constructor present in same package
+        System.out.println("\nConstructor ran at -");
+        new com.basics.Constructor();
     }
 }
