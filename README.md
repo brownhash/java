@@ -19,6 +19,8 @@ learning java
 | `src/assembly` | Assembly descriptors |
 | `target` | Build output's destination |
 
+[Ref :link:](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+
 ### Package hierarchy
 
 Root directory `src/main/java`, post this `package/subpackage/.../className.java`
