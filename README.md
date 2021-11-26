@@ -18,3 +18,19 @@ learning java
 | `src/it` | Integration Tests (primarily for plugins) |
 | `src/assembly` | Assembly descriptors |
 | `target` | Build output's destination |
+
+### Package hierarchy
+
+Root directory `src/main/java`, post this `package/subpackage/.../className.java`
+
+Example, `src/main/java/com/basics/Basics.java`
+
+```java
+package com.basics;
+
+class Basics {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}
+```
