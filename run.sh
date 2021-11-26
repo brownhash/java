@@ -4,7 +4,7 @@ then
   printf "sh run.sh <package> <class>\nExample:\n\tsh run.sh com.basics Basics\n"
 else
   # source code location
-  PROJECT_LOCATION="./src/main/java"
+  PROJECT_LOCATION="src/main/java"
   # package
   PACKAGE=$1
   # class name
@@ -14,7 +14,7 @@ else
   if [ "$?" == "0" ]
   then
     # compile
-    javac "$PROJECT_LOCATION/$PACKAGE_PATH/$CLASS.java"
+    javac $PROJECT_LOCATION/$PACKAGE_PATH/*.java
     cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
   else
     printf "unable to formulate package path from %s" "$PACKAGE"
