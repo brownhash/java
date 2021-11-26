@@ -1,5 +1,5 @@
 # help section
-if [ "$1" == "help" ]
+if [[ "$1" == "help" || "$1" == "" ]]
 then
   printf "sh run.sh <package> <class>\nExample:\n\tsh run.sh com.basics Basics\n"
 else
@@ -13,17 +13,9 @@ else
   PACKAGE_PATH=$(echo "$PACKAGE" | tr "." "/")
   if [ "$?" == "0" ]
   then
-    CLASS_FILE_LOCATION="$PROJECT_LOCATION/$PACKAGE_PATH/$CLASS.java"
     # compile
-    javac "$CLASS_FILE_LOCATION"
-    if [ "$?" == "0" ]
-    then
-      # run
-      cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
-    else
-      printf "unable to compile %s" "$CLASS_FILE_LOCATION"
-      exit $?
-    fi
+    javac "$PROJECT_LOCATION/$PACKAGE_PATH/$CLASS.java"
+    cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
   else
     printf "unable to formulate package path from %s" "$PACKAGE"
     exit $?
