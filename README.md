@@ -1,4 +1,4 @@
-# java
+# Java :coffee:
 learning java
 
 ## Standard directory layout
