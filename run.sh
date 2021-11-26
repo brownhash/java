@@ -1,10 +1,11 @@
+# source code location
+PROJECT_LOCATION="src/main/java"
+
 # help section
 if [[ "$1" == "help" || "$1" == "" ]]
 then
   printf "sh run.sh <package> <class>\nExample:\n\tsh run.sh com.basics Basics\n"
 else
-  # source code location
-  PROJECT_LOCATION="src/main/java"
   # package
   PACKAGE=$1
   # class name
@@ -13,8 +14,13 @@ else
   PACKAGE_PATH=$(echo "$PACKAGE" | tr "." "/")
   if [ "$?" == "0" ]
   then
-    # compile
     rm -rf $PROJECT_LOCATION/$PACKAGE_PATH/*.class
+    # exit 0 if clean is given as parameter
+    if [ "$2" == "clean" ]
+    then
+      exit 0
+    fi
+    # compile
     javac $PROJECT_LOCATION/$PACKAGE_PATH/*.java
     cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
   else
