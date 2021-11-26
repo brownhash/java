@@ -8,8 +8,6 @@ then
 else
   # package
   PACKAGE=$1
-  # class name
-  CLASS=$2
   # convert package structure to directory path
   PACKAGE_PATH=$(echo "$PACKAGE" | tr "." "/")
   if [ "$?" == "0" ]
@@ -22,6 +20,9 @@ else
     fi
     # compile
     javac $PROJECT_LOCATION/$PACKAGE_PATH/*.java
+
+    # class name
+    CLASS=$2
     cd $PROJECT_LOCATION && java "$PACKAGE.$CLASS"
   else
     printf "unable to formulate package path from %s" "$PACKAGE"
