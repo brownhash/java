@@ -1,1 +1,1 @@
-### Application/Library sources
+### Application/Library sources (below this, the normal package hierarchy exists)
