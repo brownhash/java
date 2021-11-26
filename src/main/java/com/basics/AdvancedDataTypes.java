@@ -6,5 +6,5 @@ public class AdvancedDataTypes {
     String StringVar = "Hello World!";
     int[] IntArray = new int[2];
     ArrayList ArrayListVar = new ArrayList();
-    Map MapVar = new HashMap();
+    Map<String,String> MapVar = new HashMap();
 }

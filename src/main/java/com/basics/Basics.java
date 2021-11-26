@@ -30,7 +30,7 @@ class Basics {
         advDataTypes.ArrayListVar.add(1, 2);
         System.out.println("\tArrayList: " + advDataTypes.ArrayListVar);
         // Add keys to map
-        advDataTypes.MapVar.put("Key1", "value1");
+        advDataTypes.MapVar.put("Key", "Value");
         System.out.println("\tMap: " + advDataTypes.MapVar);
 
         // initiate a new instance of class Constructor present in same package
