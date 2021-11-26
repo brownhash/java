@@ -23,7 +23,7 @@ learning java
 
 Root directory `src/main/java`, post this `package/subpackage/.../className.java`
 
-Example, `src/main/java/com/basics/Basics.java`
+For example, `src/main/java/com/basics/Basics.java`
 
 ```java
 package com.basics;
@@ -33,4 +33,33 @@ class Basics {
         System.out.println("Hello World!");
     }
 }
+```
+
+## Compile & Run
+
+To compile,
+
+```shell
+javac package/subpackage/className.java
+```
+
+and to run,
+
+```shell
+java package.subpackage.className
+```
+
+For example, to run above stated `src/main/java/com/basics/Basics.java`
+
+```shell
+javac src/main/java/com/basics/Basics.java
+cd src/main/java && java com.basics.Basics
+```
+
+---
+
+Above processes are packed in `run.sh`, to compile and run
+
+```shell
+sh run.sh com.basics Basics
 ```
