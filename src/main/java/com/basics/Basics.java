@@ -4,6 +4,21 @@ class Basics {
     public static void main(String[] args) {
         System.out.println("Java basics!");
 
+        // OOP
+        // 1. Encapsulation
+        com.basics.Encapsulation encapsulation = new com.basics.Encapsulation();
+        System.out.println("\n(OOP) Encapsulation -");
+        encapsulation.setName("harry");
+        System.out.println("\t" + encapsulation.getName());
+
+        // 2. Abstraction
+        // 3. Inheritance
+        // initiate a new instance of class Inheritance present in same package
+        System.out.println("\n(OOP) Inheritance -");
+        com.basics.Inheritance inheritance = new com.basics.Inheritance();
+        inheritance.properties();
+        // 4. Polymorphism
+
         // initiate a new instance of class PrimitiveDataTypes present in same package
         com.basics.PrimitiveDataTypes dataTypes = new com.basics.PrimitiveDataTypes();
 
@@ -58,16 +73,6 @@ class Basics {
         com.basics.ErrorHandling errorHandling = new com.basics.ErrorHandling();
         System.out.println("\nException handling -");
         errorHandling.tryCatch();
-
-        // OOP
-        // 1. Encapsulation
-        // 2. Abstraction
-        // 3. Inheritance
-        // initiate a new instance of class Inheritance present in same package
-        System.out.println("\nInheritance -");
-        com.basics.Inheritance inheritance = new com.basics.Inheritance();
-        inheritance.properties();
-        // 4. Polymorphism
 
         // initiate a new instance of class CustomException present in same package
         System.out.println("\nCustom Exceptions -");
