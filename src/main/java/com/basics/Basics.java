@@ -6,12 +6,22 @@ class Basics {
 
         // OOP
         // 1. Encapsulation
+        // initiate a new instance of class Encapsulation present in same package
         com.basics.Encapsulation encapsulation = new com.basics.Encapsulation();
         System.out.println("\n(OOP) Encapsulation -");
         encapsulation.setName("harry");
         System.out.println("\t" + encapsulation.getName());
 
         // 2. Abstraction
+        // initiate a new instance of class Abstraction present in same package
+        com.basics.Abstraction abstraction = new com.basics.Abstraction();
+        System.out.println("\n(OOP) Abstraction -");
+        if (abstraction.isAbstract) {
+            System.out.println("\t" + abstraction.getClass() + " extends abstract");
+        } else {
+            System.out.println("\t" + abstraction.getClass() + " do not extends abstract");
+        }
+
         // 3. Inheritance
         // initiate a new instance of class Inheritance present in same package
         System.out.println("\n(OOP) Inheritance -");
