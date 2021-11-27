@@ -27,7 +27,14 @@ class Basics {
         System.out.println("\n(OOP) Inheritance -");
         com.basics.Inheritance inheritance = new com.basics.Inheritance();
         inheritance.properties();
+
         // 4. Polymorphism
+        // initiate a new instance of class Inheritance present in same package
+        System.out.println("\n(OOP) Polymorphism -");
+        com.basics.Polymorphism polymorphism = new Polymorphism("name");
+        System.out.println("\t" + polymorphism.name);
+        com.basics.Polymorphism polymorphism2 = new Polymorphism("name", 3);
+        System.out.println("\t" + polymorphism2.name);
 
         // initiate a new instance of class PrimitiveDataTypes present in same package
         com.basics.PrimitiveDataTypes dataTypes = new com.basics.PrimitiveDataTypes();
