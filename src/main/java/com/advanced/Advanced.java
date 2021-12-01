@@ -7,7 +7,7 @@ public class Advanced {
         // custom data types
         // 1. Stack
         // initiate a new instance of class Stack present in same package
-        com.advanced.Stack stack = new com.advanced.Stack();
+        com.advanced.Stack<String> stack = new com.advanced.Stack<>();
         System.out.println("\nStack -");
         System.out.println("\tstack head: " + stack.head);
         System.out.println("\tputting data...");
@@ -18,7 +18,7 @@ public class Advanced {
 
         // 2. Queue
         // initiate a new instance of class Stack present in same package
-        com.advanced.Queue queue = new com.advanced.Queue();
+        com.advanced.Queue<String> queue = new com.advanced.Queue<>();
         System.out.println("\nQueue -");
         System.out.println("\tIs queue empty? " + queue.isEmpty());
         System.out.println("\tqueue size: " + queue.size());
