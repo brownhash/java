@@ -71,7 +71,7 @@ sh run.sh com.basics Basics
 To build,
 
 ```shell
-mvn package
+mvn package -f <pom_file>
 ```
 
 and to run,
