@@ -19,7 +19,7 @@ learning java
 | `src/assembly` | Assembly descriptors |
 | `target` | Build output's destination |
 
-[Ref :link:](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
+:link: [Ref](http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)
 
 ### Package hierarchy
 
@@ -81,3 +81,7 @@ java -jar target/<artifactId>-<version>.jar
 ```
 
 > Above variables retrieved from `pom.xml`: `project.artifactId` & `project.version`
+
+### [Understanding the POM file](https://maven.apache.org/pom.html)
+
+Example: [basics-pom.xml](basics-pom.xml)
