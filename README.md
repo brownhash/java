@@ -65,3 +65,19 @@ Above processes are packed in `run.sh`, to compile and run
 ```shell
 sh run.sh com.basics Basics
 ```
+
+## Build & Run Artifact
+
+To build,
+
+```shell
+mvn package
+```
+
+and to run,
+
+```shell
+java -jar target/<artifactId>-<version>.jar
+```
+
+> Above variables retrieved from `pom.xml`: `project.artifactId` & `project.version`
