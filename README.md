@@ -1,7 +1,7 @@
 # Java :coffee:
 learning java
 
-## Standard directory layout
+## Standard directory layout (for java-maven project)
 
 | Directory | Description |
 | :--- | :--- |
